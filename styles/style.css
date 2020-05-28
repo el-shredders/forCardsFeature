@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 1.2rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 200;
+  color: #4c4e61;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4c4e61;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #a3a5ae;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 35vh;
+  width: 35%;
+  margin: auto;
+}
+
+header span {
+  font-weight: 600;
+}
+
+header p {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 1.3rem;
+}
+
+section {
+  padding-bottom: 6rem;
+  min-height: 65vh;
+  width: 75%;
+  margin: auto;
+}
+
+.cardContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.card {
+  -webkit-box-shadow: 0 5px 20px #a3a5ae;
+          box-shadow: 0 5px 20px #a3a5ae;
+  border-radius: 5px;
+  padding: 2rem;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card h1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 5rem;
+          flex: 1 1 5rem;
+}
+
+.card p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 5rem;
+          flex: 1 1 5rem;
+  margin-top: 1rem;
+}
+
+.card .iconContainer {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 5rem;
+          flex: 1 1 5rem;
+}
+
+.card .iconContainer img {
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+.team {
+  border-top: 6px solid #ea5353;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.supervisor {
+  border-top: 6px solid #45d3d3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+.karma {
+  border-top: 6px solid #fcaf4a;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+}
+
+.calculator {
+  border-top: 6px solid #549ef2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+@media all and (max-width: 2075px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media all and (max-width: 1227px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  header {
+    width: 75%;
+    margin: auto;
+  }
+  section {
+    width: 90%;
+  }
+  .cardContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 507px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media all and (max-width: 414px) {
+  html h1 {
+    font-size: 1.8rem;
+  }
+  header {
+    margin: 2rem auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
